@@ -24,13 +24,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func hideRed (sender: AnyObject){
-        redThing.hidden = true
+    @IBAction func hideRed (_ sender: AnyObject){
+        redThing.isHidden = true
     }
     
-    @IBAction func hideBlue(sender: AnyObject) {
-        blueThing.hidden = true
+    @IBAction func hideBlue(_ sender: AnyObject) {
+        blueThing.isHidden = true
     }
+    
+    @IBAction func showRed(_sender: AnyObject){
+        redThing.isHidden = false
+    }
+    @IBAction func showBlue(_sender: AnyObject){
+        blueThing.isHidden = false
+    }
+    
 
 }
 

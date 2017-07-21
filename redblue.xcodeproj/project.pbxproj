@@ -12,7 +12,18 @@
 		10D61A071C126A0B0034FF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D61A051C126A0B0034FF09 /* Main.storyboard */; };
 		10D61A091C126A0B0034FF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D61A081C126A0B0034FF09 /* Assets.xcassets */; };
 		10D61A0C1C126A0B0034FF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D61A0A1C126A0B0034FF09 /* LaunchScreen.storyboard */; };
+		3C8441BB1F22B7EC00D451D1 /* redblueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8441BA1F22B7EC00D451D1 /* redblueUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C8441BD1F22B7EC00D451D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D619F61C126A0B0034FF09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10D619FD1C126A0B0034FF09;
+			remoteInfo = redblue;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		10D619FE1C126A0B0034FF09 /* redblue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redblue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		10D61A081C126A0B0034FF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10D61A0B1C126A0B0034FF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D61A0D1C126A0B0034FF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8441B81F22B7EC00D451D1 /* redblueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redblueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8441BA1F22B7EC00D451D1 /* redblueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redblueUITests.swift; sourceTree = "<group>"; };
+		3C8441BC1F22B7EC00D451D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		10D619FB1C126A0B0034FF09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8441B51F22B7EC00D451D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				10D61A001C126A0B0034FF09 /* redblue */,
+				3C8441B91F22B7EC00D451D1 /* redblueUITests */,
 				10D619FF1C126A0B0034FF09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				10D619FE1C126A0B0034FF09 /* redblue.app */,
+				3C8441B81F22B7EC00D451D1 /* redblueUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				10D61A0D1C126A0B0034FF09 /* Info.plist */,
 			);
 			path = redblue;
+			sourceTree = "<group>";
+		};
+		3C8441B91F22B7EC00D451D1 /* redblueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C8441BA1F22B7EC00D451D1 /* redblueUITests.swift */,
+				3C8441BC1F22B7EC00D451D1 /* Info.plist */,
+			);
+			path = redblueUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,18 +116,44 @@
 			productReference = 10D619FE1C126A0B0034FF09 /* redblue.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3C8441B71F22B7EC00D451D1 /* redblueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8441BF1F22B7EC00D451D1 /* Build configuration list for PBXNativeTarget "redblueUITests" */;
+			buildPhases = (
+				3C8441B41F22B7EC00D451D1 /* Sources */,
+				3C8441B51F22B7EC00D451D1 /* Frameworks */,
+				3C8441B61F22B7EC00D451D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C8441BE1F22B7EC00D451D1 /* PBXTargetDependency */,
+			);
+			name = redblueUITests;
+			productName = redblueUITests;
+			productReference = 3C8441B81F22B7EC00D451D1 /* redblueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		10D619F61C126A0B0034FF09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Carrera;
 				TargetAttributes = {
 					10D619FD1C126A0B0034FF09 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = C2P78ME6KC;
+						LastSwiftMigration = 0830;
+					};
+					3C8441B71F22B7EC00D451D1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C2P78ME6KC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 10D619FD1C126A0B0034FF09;
 					};
 				};
 			};
@@ -113,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				10D619FD1C126A0B0034FF09 /* redblue */,
+				3C8441B71F22B7EC00D451D1 /* redblueUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +187,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C8441B61F22B7EC00D451D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C8441B41F22B7EC00D451D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8441BB1F22B7EC00D451D1 /* redblueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C8441BE1F22B7EC00D451D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10D619FD1C126A0B0034FF09 /* redblue */;
+			targetProxy = 3C8441BD1F22B7EC00D451D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		10D61A051C126A0B0034FF09 /* Main.storyboard */ = {
@@ -175,8 +257,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -219,8 +303,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -239,6 +325,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -247,10 +334,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2P78ME6KC;
 				INFOPLIST_FILE = redblue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carrera.redblue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -259,11 +348,53 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2P78ME6KC;
 				INFOPLIST_FILE = redblue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carrera.redblue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3C8441C01F22B7EC00D451D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = C2P78ME6KC;
+				INFOPLIST_FILE = redblueUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrera.redblueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = redblue;
+			};
+			name = Debug;
+		};
+		3C8441C11F22B7EC00D451D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = C2P78ME6KC;
+				INFOPLIST_FILE = redblueUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrera.redblueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = redblue;
 			};
 			name = Release;
 		};
@@ -286,6 +417,16 @@
 				10D61A121C126A0B0034FF09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8441BF1F22B7EC00D451D1 /* Build configuration list for PBXNativeTarget "redblueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8441C01F22B7EC00D451D1 /* Debug */,
+				3C8441C11F22B7EC00D451D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
